@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>60 projets de potagers hydroponiques à fabriquer chez vous</title>
+<meta name="description" content="Plans illustrés avec mesures, listes de matériel, découpes et étapes de montage pour réaliser votre potager hydroponique à la maison.">
+<meta property="og:title" content="60 projets de potagers hydroponiques à fabriquer chez vous">
+<meta property="og:description" content="Plans illustrés, mesures, matériel et montage pas à pas.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/mockup-complet-760.webp">
+<link rel="preload" as="image" href="img/mockup-complet-760.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- PIXEL META : collez ici le code du pixel (fbq init + PageView) -->
+
+<style>
+  :root{
+    --forest:#173D2B; --forest-2:#1F4D37; --forest-dark:#0F2A1D;
+    --leaf:#4E8A2E; --leaf-light:#A9D18E; --olive:#74815A;
+    --ochre:#B58A45; --ivory:#F6F3EB; --ivory-2:#EEF2E6;
+    --ink:#1C1C1A; --muted:#5E625A; --white:#fff;
+    --radius:22px; --shadow:0 2px 6px rgba(0,0,0,.12);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--ivory);color:var(--ink);font-family:Inter,system-ui,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;height:auto;display:block}
+  .wrap{max-width:720px;margin:0 auto;padding:0 16px}
+  section{padding:48px 0}
+  .green{background:var(--forest);color:var(--white)}
+  .white{background:var(--white)}
+  .soft{background:var(--ivory-2)}
+  .center{text-align:center}
+  h1,h2,.display{font-family:"Barlow Condensed",Inter,sans-serif;font-weight:800;line-height:1.05;letter-spacing:.2px}
+  h2{font-size:clamp(28px,7vw,40px);text-transform:uppercase;margin-bottom:24px}
+  h2 em{font-style:normal;color:var(--leaf-light)}
+  .white h2 em,.soft h2 em{color:var(--leaf)}
+
+  /* Barre du haut */
+  .topbar{background:var(--forest);color:#fff;font-weight:800;font-size:13px;letter-spacing:.3px;text-align:center;padding:12px 16px;text-transform:uppercase}
+  .secure{display:inline-flex;gap:8px;align-items:center;margin:18px auto 0;border:2px solid var(--leaf);color:var(--leaf);background:#EEF5E8;border-radius:999px;padding:7px 16px;font-size:12px;font-weight:800;text-transform:uppercase}
+
+  /* Boutons */
+  .btn{display:inline-block;background:var(--leaf);color:#fff;text-decoration:none;font-weight:800;font-size:15px;text-transform:uppercase;letter-spacing:.2px;padding:16px 28px;border-radius:999px;box-shadow:0 4px 0 #3A6B20,var(--shadow);transition:transform .15s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn.dark{background:var(--forest-dark);box-shadow:0 4px 0 #000,var(--shadow)}
+  .green .btn{background:var(--leaf-light);color:var(--forest-dark);box-shadow:0 4px 0 #6E9B55,var(--shadow)}
+  .cta{margin-top:32px;text-align:center}
+
+  /* Héros */
+  .hero{padding:24px 0 48px;background:var(--white)}
+  .kicker{color:var(--leaf);font-weight:800;letter-spacing:6px;font-size:13px;margin:22px 0 10px}
+  .hero h1{font-size:clamp(38px,10vw,58px);color:var(--forest);text-transform:uppercase}
+  .hero h1 span{color:var(--leaf)}
+  .rule{width:110px;height:5px;border-radius:9px;background:linear-gradient(90deg,var(--leaf),var(--leaf-light));margin:18px auto}
+  .lead{font-size:clamp(18px,4.6vw,21px);font-weight:700;max-width:600px;margin:0 auto}
+  .hero-img{margin:22px auto 6px;width:100%;max-width:640px;height:auto}
+  .hero p.sub{color:var(--muted);font-size:17px;max-width:580px;margin:0 auto}
+  .devices{margin-top:18px;font-weight:600;font-size:14px}
+  .devices b{color:var(--forest)}
+
+  /* Carrousel de pages */
+  .marquee{overflow:hidden;margin:8px 0 0;mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+  .track{display:flex;gap:14px;width:max-content;animation:scroll 60s linear infinite}
+  .marquee:hover .track{animation-play-state:paused}
+  .track img{height:340px;width:auto;border-radius:10px;box-shadow:0 8px 22px rgba(0,0,0,.35);cursor:zoom-in;background:#fff}
+  @keyframes scroll{to{transform:translateX(-50%)}}
+  @media (prefers-reduced-motion:reduce){.track{animation:none}.marquee{overflow-x:auto}}
+  .hint{font-size:13px;opacity:.8;margin-top:12px}
+
+  /* Cartes */
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .card{background:#fff;color:var(--ink);border-radius:var(--radius);padding:22px 16px;box-shadow:var(--shadow)}
+  .cat{text-align:center}
+  .cat .num{display:inline-block;font-family:"Barlow Condensed";font-weight:800;font-size:14px;color:#fff;background:var(--olive);border-radius:999px;padding:2px 10px;margin-bottom:10px}
+  .cat h3{font-size:18px;line-height:1.2;margin-bottom:6px}
+  .cat p{font-size:14px;color:var(--muted)}
+  .stack{display:grid;gap:16px}
+  .feature{display:flex;gap:14px;align-items:flex-start;text-align:left}
+  .feature .ico{font-size:30px;line-height:1;flex:none;width:44px;text-align:center}
+  .feature h3{color:var(--forest);font-size:19px;margin-bottom:6px}
+  .feature p{color:var(--muted);font-size:15px}
+  .ideal h3{text-transform:uppercase;font-size:16px;letter-spacing:.2px}
+
+  /* Zoom sur un projet */
+  .pair{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:22px}
+  .pair img{border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.18);cursor:zoom-in}
+  .labels{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .labels div{background:var(--ivory);border-left:4px solid var(--leaf);border-radius:10px;padding:12px 14px;text-align:left}
+  .labels b{display:block;color:var(--forest)}
+  .labels span{font-size:14px;color:var(--muted)}
+
+  /* Ce que vous recevez */
+  .checks{list-style:none;text-align:left;max-width:520px;margin:20px auto 0;display:grid;gap:10px}
+  .checks li{padding-left:32px;position:relative;font-weight:500}
+  .checks li::before{content:"";position:absolute;left:0;top:2px;width:22px;height:22px;border-radius:50%;background:var(--leaf) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5L20 7'/%3E%3C/svg%3E") center/14px no-repeat}
+  .box{background:var(--ivory);border-radius:var(--radius);padding:24px 18px;margin-top:22px}
+  .box h3{font-size:18px;color:var(--forest)}
+  .note{font-size:13px;color:var(--muted);margin-top:16px}
+
+  /* Bonus */
+  .pill{display:inline-block;background:var(--leaf);color:#fff;border-radius:999px;padding:8px 18px;font-weight:800;font-size:14px;margin-bottom:24px}
+  .bonus{text-align:center}
+  .bonus img{width:min(260px,80%);margin:0 auto 8px}
+  .tag{display:inline-block;background:var(--leaf-light);color:var(--forest-dark);font-weight:800;font-size:13px;padding:3px 12px;border-radius:4px;margin-bottom:10px}
+  .bonus h3{font-size:20px;line-height:1.2;margin-bottom:8px}
+  .bonus p{color:var(--muted);font-size:15px}
+  .incl{margin-top:16px;border:2px solid var(--leaf);border-radius:12px;padding:10px;font-weight:700;color:var(--forest)}
+
+  /* Offre */
+  .plans{display:grid;gap:26px;margin-top:8px}
+  .plan{background:#fff;color:var(--ink);border-radius:var(--radius);padding:28px 20px;text-align:center;position:relative;box-shadow:var(--shadow)}
+  .plan.best{border:5px solid var(--leaf-light)}
+  .badge{position:absolute;top:-16px;left:50%;transform:translateX(-50%);background:var(--leaf-light);color:var(--forest-dark);font-weight:800;font-size:13px;padding:6px 16px;border-radius:999px;white-space:nowrap}
+  .plan h3{font-family:"Barlow Condensed";font-weight:800;font-size:32px;color:var(--forest);text-transform:uppercase}
+  .plan .for{font-weight:700;margin:4px 0 8px}
+  .plan .desc{color:var(--muted);font-size:14px;margin-bottom:12px}
+  .plan .checks{font-size:15px;margin:14px auto 18px}
+  .plan .checks li.gift::before{background-color:var(--ochre)}
+  .price{font-family:"Barlow Condensed";font-weight:800;font-size:64px;line-height:1;color:var(--ink)}
+  .once{color:var(--muted);font-size:14px;margin:4px 0 18px}
+  .plan .btn{display:block;width:100%;background:var(--leaf);color:#fff;box-shadow:0 4px 0 #3A6B20,var(--shadow)}
+  .plan .btn.dark{background:var(--forest-dark);box-shadow:0 4px 0 #000,var(--shadow)}
+  .plan-img{margin:6px auto 0;width:100%;max-width:420px;height:auto}
+  .plan-cover{width:150px;margin:6px auto 0;border-radius:6px;box-shadow:0 8px 20px rgba(0,0,0,.2)}
+  .closing{margin-top:26px;font-size:17px;font-weight:600;text-align:center}
+
+  /* Garantie */
+  .seal{width:220px;margin:0 auto 20px;filter:drop-shadow(0 10px 18px rgba(0,0,0,.18))}
+  .guar p{max-width:560px;margin:0 auto 12px;color:var(--muted)}
+  .ticks{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 18px;font-weight:700;color:var(--forest);margin-top:12px}
+
+  /* Étapes */
+  .step{text-align:left}
+  .step .n{width:48px;height:48px;border-radius:12px;background:var(--forest);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:18px;margin-bottom:14px}
+  .step h3{text-transform:uppercase;font-size:17px;color:var(--forest);margin-bottom:6px}
+  .step p{color:var(--muted);font-size:15px}
+  .step .checks{margin:10px 0 0;font-size:14px;font-weight:600}
+
+  /* FAQ */
+  details{background:#fff;border-radius:14px;margin-bottom:10px;box-shadow:var(--shadow);overflow:hidden}
+  summary{cursor:pointer;list-style:none;padding:18px 48px 18px 18px;font-weight:700;position:relative}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);font-size:24px;color:var(--leaf);font-weight:700}
+  details[open] summary::after{content:"–"}
+  details p{padding:0 18px 18px;color:var(--muted)}
+
+  footer{background:var(--ink);color:rgba(255,255,255,.8);text-align:center;font-size:12px;padding:40px 16px}
+  footer p{max-width:620px;margin:0 auto 10px}
+  footer nav{margin:14px 0}
+  footer a{color:#fff;margin:0 6px}
+
+  /* Visionneuse */
+  dialog{border:0;padding:0;background:transparent;max-width:min(94vw,760px);margin:auto}
+  dialog::backdrop{background:rgba(0,0,0,.85)}
+  dialog img{max-height:90vh;width:auto;margin:auto;border-radius:8px}
+  dialog button{position:fixed;top:14px;right:16px;background:#fff;border:0;border-radius:50%;width:42px;height:42px;font-size:22px;cursor:pointer}
+
+  @media (max-width:420px){
+    .track img{height:280px}
+    .labels{grid-template-columns:1fr}
+  }
+  @media (min-width:760px){
+    .stack.two{grid-template-columns:1fr 1fr}
+  }
+</style>
+<script src="https://cashflow.mentoriaprocesso.com/t/p.js?w=5da249b7-3ce5-45cf-a6cd-77319a05052b&o=5a67809b-80d9-4437-9fa0-87aab5f77a81" data-offer="5a67809b-80d9-4437-9fa0-87aab5f77a81" data-nowprocket data-no-minify="1" data-no-optimize="1" data-cfasync="false" async></script>
+</head>
+<body>
+
+<div class="topbar">Offre de lancement : 19,90 € seulement</div>
+
+<!-- 1. HÉROS -->
+<section class="hero center">
+  <div class="wrap">
+    <div class="secure">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+      Paiement 100 % sécurisé
+    </div>
+    <p class="kicker">— HYDROPONIE —</p>
+    <h1>60 projets de potagers hydroponiques <span>à fabriquer chez vous</span></h1>
+    <div class="rule"></div>
+    <p class="lead">Des plans illustrés avec mesures, listes de matériel, découpes et étapes de montage pour réaliser votre installation.</p>
+    <img class="hero-img" src="img/mockup-complet-760.webp" srcset="img/mockup-complet-760.webp 760w, img/mockup-complet.webp 1280w" sizes="(max-width:700px) 100vw, 640px" width="760" height="570" alt="Le dossier 60 projets de potagers hydroponiques, ses 4 bonus et une page de projet sur tablette" fetchpriority="high">
+    <p class="sub">Salades, basilic, fraises ou tomates cerises : choisissez un modèle adapté à votre balcon, votre terrasse ou votre intérieur, réunissez les pièces et suivez le montage pas à pas.</p>
+    <div class="cta"><a class="btn" href="#offre">Accéder aux 60 projets →</a></div>
+    <p class="devices">Accès par e-mail après le paiement, à consulter sur <b>téléphone, tablette ou ordinateur</b> et à imprimer.</p>
+  </div>
+</section>
+
+<!-- 2. PROJETS + CATÉGORIES -->
+<section class="green center">
+  <div class="wrap">
+    <h2>Découvrez quelques-uns des <em>projets</em> de la collection :</h2>
+  </div>
+  <div class="marquee" aria-label="Exemples de pages du dossier">
+    <div class="track" id="track"></div>
+  </div>
+  <div class="wrap">
+    <p class="hint">Touchez une page pour l’agrandir.</p>
+    <h2 style="margin-top:40px;font-size:clamp(22px,5.6vw,30px)">60 projets organisés en 8 familles :</h2>
+    <div class="grid2">
+      <div class="card cat"><span class="num">01–02</span><h3>Pour commencer</h3><p>Une laitue sans pompe et six laitues sur un canal.</p></div>
+      <div class="card cat"><span class="num">03–09</span><h3>Formats passifs</h3><p>Petits bacs sans pompe pour aromatiques et jeunes plants.</p></div>
+      <div class="card cat"><span class="num">10–18</span><h3>Eau aérée</h3><p>Laitues, basilic, menthe, persil et pak-choïs en bac aéré.</p></div>
+      <div class="card cat"><span class="num">19–28</span><h3>Canaux NFT</h3><p>Lignes courtes, angles, plusieurs niveaux et fraisiers.</p></div>
+      <div class="card cat"><span class="num">29–35</span><h3>Tours et murs</h3><p>Colonnes, murs autonomes et solutions pour peu de sol.</p></div>
+      <div class="card cat"><span class="num">36–45</span><h3>Substrat irrigué</h3><p>Tomates, poivrons, aubergines, concombres et fraises.</p></div>
+      <div class="card cat"><span class="num">46–51</span><h3>Tables à marées</h3><p>Salades, basilics, fraisiers et jeunes plants.</p></div>
+      <div class="card cat"><span class="num">52–60</span><h3>Installations combinées</h3><p>Étagères, potager de balcon et terrasse.</p></div>
+    </div>
+    <div class="cta"><a class="btn" href="#offre">Accéder aux 60 projets →</a></div>
+  </div>
+</section>
+
+<!-- 3. UN PROJET DE PLUS PRÈS -->
+<section class="white center">
+  <div class="wrap">
+    <h2>Voyez un projet <em>de plus près</em></h2>
+    <div class="pair">
+      <img src="img/pag-006-mini.webp" alt="Projet 01 : le modèle, une laitue sans pompe" loading="lazy" width="480" height="679" data-zoom="img/pag-006.webp">
+      <img src="img/pag-007-mini.webp" alt="Projet 01 : percer, préparer, installer" loading="lazy" width="480" height="679" data-zoom="img/pag-007.webp">
+    </div>
+    <div class="labels">
+      <div><b>Le modèle</b><span>L’installation illustrée, ses dimensions et son emplacement.</span></div>
+      <div><b>Les pièces</b><span>Le matériel, les quantités, les raccords et les découpes.</span></div>
+      <div><b>Le montage</b><span>Les étapes et les détails d’assemblage, en images.</span></div>
+      <div><b>La mise en route</b><span>Les vérifications et les indications pour commencer à cultiver.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. POURQUOI -->
+<section class="green">
+  <div class="wrap">
+    <h2 class="center">Pourquoi ces 60 projets sont <em>si pratiques</em> ?</h2>
+    <div class="stack two">
+      <div class="card feature"><div class="ico">📐</div><div><h3>Mesures et découpes</h3><p>Les dimensions, les découpes et les perçages à préparer avant de commencer.</p></div></div>
+      <div class="card feature"><div class="ico">🧾</div><div><h3>Liste de matériel</h3><p>Les pièces, les raccords et leurs quantités, pour acheter juste ce qu’il faut.</p></div></div>
+      <div class="card feature"><div class="ico">🔧</div><div><h3>Montage illustré</h3><p>Des schémas et des étapes en images pour comprendre comment tout s’assemble.</p></div></div>
+      <div class="card feature"><div class="ico">💧</div><div><h3>Eau, nutriments et lumière</h3><p>Un guide de démarrage : eau, nutriments, pH et conductivité expliqués simplement.</p></div></div>
+      <div class="card feature"><div class="ico">🪴</div><div><h3>Pour chaque espace</h3><p>Balcon, terrasse, jardin ou intérieur : chaque projet indique ses conditions d’installation.</p></div></div>
+      <div class="card feature"><div class="ico">📚</div><div><h3>Tout au même endroit</h3><p>Les 60 projets réunis dans un dossier, avec un index par culture et par espace.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. ACCROCHE -->
+<section class="white center">
+  <div class="wrap">
+    <h2>Arrêtez de chercher des tutoriels <em>éparpillés</em> sur Internet</h2>
+    <p class="lead" style="font-weight:500;color:var(--muted)">Ayez 60 projets avec mesures, matériel, découpes et montage réunis au même endroit, à consulter chaque fois que vous voulez monter une nouvelle installation.</p>
+    <div class="cta"><a class="btn" href="#offre">Accéder aux 60 projets →</a></div>
+  </div>
+</section>
+
+<!-- 6. IDÉAL POUR VOUS -->
+<section class="green">
+  <div class="wrap">
+    <h2 class="center">Idéal pour vous <em>si vous voulez :</em></h2>
+    <div class="stack two ideal">
+      <div class="card feature"><div class="ico">🥬</div><div><h3>Monter votre première installation</h3><p>Commencer par un modèle simple, sans pompe, puis passer aux systèmes plus complets.</p></div></div>
+      <div class="card feature"><div class="ico">🌿</div><div><h3>Cultiver salades et aromatiques</h3><p>Laitues, basilic, menthe, persil, fraises ou tomates cerises, à portée de main.</p></div></div>
+      <div class="card feature"><div class="ico">🏡</div><div><h3>Profiter d’un petit espace</h3><p>Comparer plusieurs modèles et choisir celui qui convient à votre balcon ou votre intérieur.</p></div></div>
+      <div class="card feature"><div class="ico">🛒</div><div><h3>Savoir exactement quoi acheter</h3><p>Arriver au magasin de bricolage avec la liste des pièces et les mesures.</p></div></div>
+      <div class="card feature"><div class="ico">⏱️</div><div><h3>Gagner du temps</h3><p>Éviter de tout planifier de zéro : le projet indique quoi couper, percer et assembler.</p></div></div>
+      <div class="card feature"><div class="ico">🔨</div><div><h3>Fabriquer de vos mains</h3><p>Réaliser une installation solide et soignée, en suivant un pas-à-pas illustré.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. TOUT CE QUE VOUS RECEVEZ -->
+<section class="white center">
+  <div class="wrap">
+    <h2>Tout ce que <em>vous recevez</em> :</h2>
+    <img class="hero-img" src="img/mockup-complet-760.webp" srcset="img/mockup-complet-760.webp 760w, img/mockup-complet.webp 1280w" sizes="(max-width:700px) 100vw, 640px" width="760" height="570" alt="Le dossier 60 projets de potagers hydroponiques, ses 4 bonus et une page de projet sur tablette" loading="lazy">
+    <ul class="checks">
+      <li>Les 60 projets complets, sur 179 pages illustrées</li>
+      <li>Les plans, les dimensions et les listes de matériel</li>
+      <li>Les découpes, les raccords et le montage illustré</li>
+      <li>Les conditions d’installation et les plantes compatibles</li>
+      <li>Les indications de mise en route et d’entretien</li>
+      <li>Un guide de démarrage : eau, nutriments, pH et conductivité</li>
+      <li>Un index pour retrouver un projet par culture et par espace</li>
+    </ul>
+    <div class="box">
+      <h3>Petits bacs, canaux NFT, tours, murs, tables à marées et installations de balcon.</h3>
+    </div>
+    <p class="note">Dossier numérique en PDF : aucun kit physique n’est envoyé. Les matériaux, les outils, les graines et les équipements de culture sont à acheter séparément.</p>
+  </div>
+</section>
+
+<!-- 8. BONUS -->
+<section class="green center">
+  <div class="wrap">
+    <h2 style="margin-bottom:10px">Et ce n’est pas tout…</h2>
+    <p style="font-style:italic;margin-bottom:18px">Avec votre accès, vous recevez aussi 4 guides pour cultiver et entretenir votre potager.</p>
+    <span class="pill">🎁 4 BONUS INCLUS</span>
+    <div class="stack two">
+      <div class="card bonus">
+        <img src="img/bonus-03_atlas.webp" alt="Bonus Atlas visuel" loading="lazy" width="640" height="640">
+        <span class="tag">🎁 BONUS 1</span>
+        <h3>Atlas visuel : problèmes et soins du potager hydroponique</h3>
+        <p>Reconnaissez les signes sur les feuilles, les racines et l’eau, vérifiez les causes possibles et consultez les soins à apporter.</p>
+        <div class="incl">Inclus avec votre accès</div>
+      </div>
+      <div class="card bonus">
+        <img src="img/bonus-04_eau_nutriments.webp" alt="Bonus Eau et nutriments" loading="lazy" width="640" height="640">
+        <span class="tag">🎁 BONUS 2</span>
+        <h3>Guide pratique : eau et nutriments en hydroponie</h3>
+        <p>Préparez la solution nutritive, mesurez et ajustez le pH et l’EC, et sachez quand compléter ou renouveler la réserve.</p>
+        <div class="incl">Inclus avec votre accès</div>
+      </div>
+      <div class="card bonus">
+        <img src="img/bonus-01_calendrier.webp" alt="Bonus Calendrier de culture" loading="lazy" width="640" height="640">
+        <span class="tag">🎁 BONUS 3</span>
+        <h3>Calendrier de culture au fil des saisons</h3>
+        <p>Sachez quoi cultiver et quand commencer, selon la saison et votre installation : intérieur, balcon ou serre.</p>
+        <div class="incl">Inclus avec votre accès</div>
+      </div>
+      <div class="card bonus">
+        <img src="img/bonus-02_micropousses.webp" alt="Bonus Micropousses" loading="lazy" width="640" height="640">
+        <span class="tag">🎁 BONUS 4</span>
+        <h3>20 fiches pratiques : micropousses à cultiver chez soi</h3>
+        <p>Une fiche par variété, du semis à la récolte, pour cultiver des micropousses dans un tout petit espace.</p>
+        <div class="incl">Inclus avec votre accès</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 9. OFFRE -->
+<section class="green" id="offre" style="background:var(--forest-2)">
+  <div class="wrap">
+    <h2 class="center">Accédez à la collection complète :</h2>
+    <div class="plans">
+
+      <div class="plan best">
+        <span class="badge">⚡ ACCÈS COMPLET</span>
+        <h3>60 projets + 4 bonus</h3>
+        <p class="desc">Pour monter votre installation et savoir ensuite comment la cultiver et l’entretenir.</p>
+        <img class="plan-img" src="img/mockup-complet-760.webp" alt="Le dossier et ses 4 bonus" loading="lazy">
+        <ul class="checks">
+          <li>Les 60 projets complets, sur 179 pages illustrées</li>
+          <li>Plans illustrés et dimensions</li>
+          <li>Matériel, pièces et découpes</li>
+          <li>Montage pas à pas</li>
+          <li>Mise en route, entretien et guide de démarrage</li>
+          <li>Fichiers PDF à télécharger et à imprimer</li>
+          <li class="gift">Bonus 1 — Atlas visuel : problèmes et soins</li>
+          <li class="gift">Bonus 2 — Guide eau et nutriments</li>
+          <li class="gift">Bonus 3 — Calendrier de culture au fil des saisons</li>
+          <li class="gift">Bonus 4 — 20 fiches micropousses</li>
+        </ul>
+        <div class="price">19,90 €</div>
+        <p class="once">Paiement unique. Sans abonnement.</p>
+        <a class="btn" data-checkout="complete" href="https://pay.hotmart.com/C108353499S?off=hsawiorw&checkoutMode=10">Je veux mon accès →</a>
+      </div>
+
+    </div>
+    <p class="closing">Un seul paiement, et les 60 projets restent réunis dans un même dossier pour toutes vos prochaines réalisations.</p>
+  </div>
+</section>
+
+<!-- 10. GARANTIE -->
+<section class="white center guar">
+  <div class="wrap">
+    <img class="seal" src="img/garantie-30-jours.webp" width="440" height="440" alt="Garantie 30 jours satisfait ou remboursé" loading="lazy">
+    <h2>Satisfait ou <em>remboursé</em></h2>
+    <p>Consultez les projets, les plans et les listes de matériel pendant les 30 jours suivant votre achat.</p>
+    <p>Si le dossier ne vous convient pas, contactez notre support dans ce délai pour demander le remboursement.</p>
+    <div class="ticks"><span>✔ Simple</span><span>✔ Sans justification</span><span>✔ Achat protégé</span></div>
+  </div>
+</section>
+
+<!-- 11. COMMENT ÇA MARCHE -->
+<section class="soft">
+  <div class="wrap">
+    <h2 class="center" style="color:var(--forest);text-transform:none">Comment recevoir vos projets</h2>
+    <p class="center" style="color:var(--muted);margin:-12px 0 24px">Téléchargez et consultez vos projets quand vous voulez.</p>
+    <div class="stack">
+      <div class="card step"><div class="n">1</div><h3>Finalisez votre commande</h3><p>Finalisez votre paiement en toute sécurité.</p></div>
+      <div class="card step"><div class="n">2</div><h3>Recevez votre accès</h3><p>Après la confirmation du paiement, vous recevez le lien d’accès par e-mail.</p></div>
+      <div class="card step"><div class="n">3</div><h3>Téléchargez le dossier</h3>
+        <ul class="checks"><li>Les 60 projets en PDF</li><li>Mesures, matériel et découpes</li><li>Schémas de montage</li><li>Les 4 bonus</li></ul></div>
+      <div class="card step"><div class="n">4</div><h3>Choisissez, montez, cultivez</h3>
+        <ul class="checks"><li>Choisissez un projet adapté à votre espace</li><li>Réunissez les pièces et suivez le montage</li><li>Lancez la culture et récoltez</li></ul></div>
+    </div>
+    <div class="cta"><a class="btn" href="#offre">Accéder aux 60 projets →</a></div>
+  </div>
+</section>
+
+<!-- 12. FAQ -->
+<section class="white">
+  <div class="wrap">
+    <h2 class="center" style="color:var(--forest);text-transform:none">Questions fréquentes</h2>
+    <details><summary>Que vais-je recevoir ?</summary><p>Un dossier numérique en PDF avec 60 projets, leurs plans et les indications de réalisation. Aucun kit physique n’est envoyé.</p></details>
+    <details><summary>Faut-il déjà connaître l’hydroponie ?</summary><p>Non. Le guide de démarrage présente les bases (eau, nutriments, lumière) et chaque projet précise sa difficulté et les conditions nécessaires. Vous pouvez commencer par un modèle sans pompe.</p></details>
+    <details><summary>Que contient chaque projet ?</summary><p>Les mesures, le matériel, les découpes, le montage illustré et les indications de mise en route et d’entretien.</p></details>
+    <details><summary>Faut-il des outils coûteux ?</summary><p>Non. La plupart des projets se réalisent avec des outils simples pour mesurer, couper et percer. Chaque projet indique ce qui est nécessaire.</p></details>
+    <details><summary>Faut-il une pompe ?</summary><p>Cela dépend du modèle. La collection comprend des configurations passives, sans pompe, et des systèmes avec circulation ou aération. Chaque projet précise les équipements nécessaires.</p></details>
+    <details><summary>Où trouver les pièces ?</summary><p>Les projets utilisent des bacs, tubes, raccords et paniers que l’on trouve en magasin de bricolage, en jardinerie ou en ligne. Suivez les quantités et les spécifications du projet : les composants doivent être compatibles entre eux et adaptés aux plantes alimentaires.</p></details>
+    <details><summary>Puis-je cultiver à l’intérieur ?</summary><p>Oui, avec un projet adapté et une lumière suffisante. Un éclairage horticole peut être nécessaire selon l’emplacement.</p></details>
+    <details><summary>Que puis-je cultiver ?</summary><p>Les fiches indiquent les plantes compatibles avec chaque projet : salades, plantes aromatiques, fraises, tomates cerises, poivrons et plus encore.</p></details>
+    <details><summary>Puis-je cultiver toute l’année ?</summary><p>Cela dépend de la région, des plantes, de la lumière et de la température. Les projets indiquent les conditions à prendre en compte.</p></details>
+    <details><summary>Puis-je consulter et imprimer les fichiers ?</summary><p>Oui. Les PDF se consultent sur téléphone, tablette ou ordinateur, et vous pouvez imprimer les pages du projet que vous réalisez.</p></details>
+    <details><summary>Les bonus sont-ils inclus ?</summary><p>Oui. Votre accès comprend les 60 projets complets et les quatre bonus : l’atlas des problèmes et soins, le guide eau et nutriments, le calendrier de culture et les 20 fiches micropousses.</p></details>
+    <details><summary>Comment fonctionne la garantie ?</summary><p>Vous disposez de 30 jours après l’achat pour consulter le dossier et demander un remboursement auprès du support s’il ne vous convient pas.</p></details>
+    <div class="cta"><a class="btn" href="#offre">Accéder aux 60 projets →</a></div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 — Tous droits réservés.</p>
+  <nav><a href="#">Mentions légales</a>·<a href="#">CGV</a>·<a href="#">Confidentialité</a>·<a href="#">Contact</a></nav>
+  <p>Ce site n’est pas affilié à Facebook™, Instagram™, Google™ ni à aucune autre plateforme mentionnée.</p>
+  <p>Tous les droits sur l’œuvre « 60 projets de potagers hydroponiques à fabriquer chez vous » sont réservés. Toute reproduction, totale ou partielle, sans autorisation est interdite.</p>
+</footer>
+
+<dialog id="viewer"><button aria-label="Fermer" onclick="this.parentNode.close()">×</button><img alt=""></dialog>
+
+<script>
+  // Liens de paiement : remplacez "#" par les liens de votre plateforme
+  const CHECKOUT = {
+    complete: "https://pay.hotmart.com/C108353499S?off=hsawiorw&checkoutMode=10"
+  };
+  document.querySelectorAll("[data-checkout]").forEach(a => {
+    const url = CHECKOUT[a.dataset.checkout];
+    if (!url || url === "#") return;
+    const dest = new URL(url);
+    new URLSearchParams(location.search).forEach((v, k) => dest.searchParams.set(k, v)); // conserve les UTM
+    a.href = dest.toString();
+  });
+
+  // Carrousel de pages
+  const pages = [8, 28, 55, 73, 79, 94, 127, 146, 164, 2, 9];
+  const track = document.getElementById("track");
+  const n = p => String(p).padStart(3, "0");
+  const html = pages.map(p => `<img src="img/pag-${n(p)}-mini.webp" alt="Page ${p} du dossier" loading="lazy" width="480" height="679" data-zoom="img/pag-${n(p)}.webp">`).join("");
+  track.innerHTML = html + html;
+
+  // Visionneuse
+  const viewer = document.getElementById("viewer");
+  document.addEventListener("click", e => {
+    const img = e.target.closest("[data-zoom]");
+    if (!img) return;
+    viewer.querySelector("img").src = img.dataset.zoom;
+    viewer.showModal();
+  });
+  viewer.addEventListener("click", e => { if (e.target === viewer) viewer.close(); });
+</script>
+</body>
+</html>
